@@ -33,6 +33,7 @@ jobs:
           severity: CRITICAL
           exit-code: '1'
           ignore-unfixed: true
+          vuln-type: 'os,library'
 
       # log in to Docker Hub using DOCKERHUB_USERNAME and DOCKERHUB_TOKEN secrets.
       - name: Log in to Docker Hub
