@@ -11,8 +11,8 @@ services:
           DATABASE_URL: postgres://postgres:postgres@db:5432/workshop
 
     # TODO(step-5c): make `web` wait until `db` is healthy before starting.
-      ???:
-        ???:
+      depends_on:
+        db:
           condition: service_healthy
 
   db:
